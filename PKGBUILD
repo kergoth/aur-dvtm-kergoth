@@ -1,10 +1,11 @@
 # Maintainer: Sean Haugh <seanphaugh@gmail.com>
 # Contributor: Frank Lenormand <lenormf@gmail.com>
+# Contributor: Christopher Larson <kergoth@gmail.com>
 _pkgname=dvtm
-_owner=martanne
-pkgname=dvtm-git
-pkgver=0.15.37.gb45828d
-pkgrel=2
+_owner=kergoth
+pkgname=dvtm-$_owner
+pkgver=0.15.89.g299e836
+pkgrel=1
 pkgdesc='Dynamic virtual terminal manager'
 arch=('i686' 'x86_64')
 url="https://github.com/$_owner/$_pkgname"
@@ -13,7 +14,7 @@ depends=('sh')
 makedepends=('git')
 provides=("$_pkgname=$pkgver-$pkgrel")
 conflicts=('dvtm')
-source=("git+https://github.com/$_owner/$_pkgname")
+source=("git+https://github.com/$_owner/$_pkgname#branch=$_owner")
 md5sums=('SKIP')
 
 pkgver() {
